@@ -4,3 +4,5 @@ template.yaml
 go.mod
 go.sum
 .aws-sam
+bootstrap
+bootstrap.zip
