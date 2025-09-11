@@ -1,0 +1,12 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "echoscribe-api"
+resolve_s3 = true
+s3_prefix = "echoscribe-api"
+region = "us-east-1"
+profile = "admin"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = []
