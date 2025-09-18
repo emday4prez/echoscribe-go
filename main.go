@@ -15,8 +15,13 @@ func HandleRequest(ctx context.Context, request events.APIGatewayProxyRequest) (
 
 	// the response that API Gateway expects
 	return events.APIGatewayProxyResponse{
-		Body:       `{"message": "Hello from your Go API!"}`,
 		StatusCode: 200,
+		Headers: map[string]string{
+			"Access-Control-Allow-Origin":  "*", // Allow any origin
+			"Access-Control-Allow-Methods": "GET,OPTIONS",
+			"Access-Control-Allow-Headers": "Content-Type",
+		},
+		Body: `{"message": "Hello from your Go API!"}`,
 	}, nil
 }
 
