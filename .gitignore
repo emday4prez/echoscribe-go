@@ -6,3 +6,4 @@ go.sum
 .aws-sam
 bootstrap
 bootstrap.zip
+samconfig.toml
