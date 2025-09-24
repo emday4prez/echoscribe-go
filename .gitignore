@@ -7,3 +7,4 @@ go.sum
 bootstrap
 bootstrap.zip
 samconfig.toml
+.env
